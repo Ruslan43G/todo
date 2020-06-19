@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Список дел</title>
+</head>
+<body class="body">
+    <main class="page">
+        <div class="list">
+            <form class="list__form">
+                <h1 class="list__form-heading">To do list</h1>
+                <input type="text" class="list__form-name" placeholder="введите название" required minlength="3">
+                <input type="text" class="list__form-text" placeholder="введите описание" required>
+                <button type="submit" class="list__form-btn">Добавить</button>
+            </form>
+            <ol class="list__items-container">
+            <!--здесь список-->
+            </ol>    
+        </div>
+    </main>
+<template class="list__item-template">
+    <li class="list__item">
+        <h2 class="list__item-name">Заголовок</h2>
+        <p class="list__item-text">Текст</p>
+        <div class="list__item-btns">
+            <button type="button" class="list__item-btn list__item-done">done</button>
+            <button type="button" class="list__item-btn list__item-copy">copy</button>
+            <button type="button" class="list__item-btn list__item-edit">edit</button>
+            <button type="button" class="list__item-btn list__item-delete">del</button>
+        </div>
+    </li>
+</template>    
+<script src="index.js"></script>    
+</body>
+</html>
